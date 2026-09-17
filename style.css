@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color:#2c3e50 ;
+    background-color:#f4f7f6 ;
+    
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+}
+
+h1{
+    font-family: Georgia, serif;
+    color: #1a4332;
+    font-size: 24pt;
+    letter-spacing: 2px;
+
+    background-color: rgb(193, 193, 216);
+    padding: 10px;
+
+}
+h2{
+    color: #2e6f40;
+    font-size: 16px;
+
+    border-left-width: 5px;
+    border-left-style: solid;
+
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+
+    padding-left: 12px;
+    padding-bottom: 6px;
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    
+
+   
+
+}
+
+h3{
+    color: #34495e;
+    font-size: 13pt;
+    font-style: italic;
+
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+
+    padding-bottom: 4px;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    max-width: 200px;
+}
+h4{
+    color: #34495e;
+    font-size: 10pt;
+    font-style: italic;
+
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+
+    padding-bottom: 4px;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+}
+p{
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+ul, ol{
+
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-left: 25px; 
+}
+
+img{
+    display: block;
+
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 15px;
+
+    padding-top: 8px; 
+    padding-bottom: 8px;
+    padding-left: 8px; 
+    padding-right: 8px;
+
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    margin-left: auto; 
+    margin-right: auto;
+
+}
+
+a:link {
+    color: #a0522d;
+    text-decoration: none;
+    font-weight: bold;
+    
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+
+    padding-top: 2px; 
+    padding-bottom: 2px; 
+    padding-left: 4px; 
+    padding-right: 4px;
+}
+
+a:visited {
+    color: #a0522d;
+    text-decoration: none;
+    font-weight: bold;
+
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+
+    padding-top: 2px; 
+    padding-bottom: 2px; 
+    padding-left: 4px; 
+    padding-right: 4px;
+}
+
+a:hover {
+    color: #d2691e;
+
+    border-bottom-style: solid; 
+    border-radius: 4px;
+
+    background-color: #fef5e7;
+}
+
+a:active {
+    color: #cd853f;
+}
+
+.menu-link:link,
+.menu-link:visited {
+
+    display: inline-block;
+
+    padding: 8px 16px;
+    margin: 0 3px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #1a4332;
+    border-radius: 6px;
+
+    background-color: #1a4332;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+}
+
+.menu-link:hover {
+
+    background-color: #2e6f40;
+    border-color: #2e6f40;
+
+    color: white;
+
+    border-bottom-style: solid;
+}
+.kiemelt {
+
+    background-color: lightblue;
+}
+.menu {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 10px;
+
+    border: 1px solid #7f8c8d;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fdfefe;
+}
+
+.tartalom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+
+    border: 1px solid #7f8c8d;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fdfefe;
+}
+
+.jellemzok,
+.fajta {
+    background-color: #f5e6d3;
+    border: 1px solid #7f8c8d;
+    border-radius: 8px;
+    padding: 15px;
+    height: 100%;
+}
+
+
+.info {
+    border: 1px solid #7f8c8d;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fdfefe;
+}
+
+#jellemzo,
+#fajta {
+    border: none;
+    margin-top: 0;
+}
+
+#jellemzo {
+    background-color: purple;
+    color: white;
+    padding: 8px 12px;
+}
+
+#fajta {
+    background-color: green;
+    color: white;
+    padding: 8px 12px;
+}
+
+.fajta-nev {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    body, p, li {
+        width: 100%;
+        font-size: calc(12px + 2vw);
+    }
+
+    .tartalom {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        grid-auto-flow: row;
+    }
+}
